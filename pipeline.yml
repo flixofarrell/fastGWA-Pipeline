@@ -1,0 +1,24 @@
+######################################################
+# pipeline_template.py configuration file
+# Add pipeline specific options into separate sections
+# pipeline_example_minimal.yml
+######################################################
+
+# General options:
+general:
+    author_name:
+    project_name:
+    licence:
+    version:
+
+# Pipeline specific options:
+inp_title: hapmap1
+
+GRM_dir: GRM
+
+asso_dir: asso
+
+pheno: pop.txt
+
+#cluster:
+#    tmpdir: /tmp/
