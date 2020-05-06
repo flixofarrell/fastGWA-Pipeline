@@ -1,7 +1,7 @@
 ######################################################
 # pipeline_template.py configuration file
-# Add pipeline specific options into separate sections
-# pipeline_example_minimal.yml
+# Pipeline specific options into separate sections
+# pipeline.yml
 ######################################################
 
 # General options:
@@ -12,13 +12,23 @@ general:
     version:
 
 # Pipeline specific options:
-inp_title: hapmap1
+#file holding GWAS data and pheno file
+inp_file: sim_gwas
 
+#Number of chromosome files (including sex chromsomes)
+chr_number: 22
+
+#title of each chromosome file
+inp_title: chr
+
+#title of GRM directory (made by pipeline)
 GRM_dir: GRM
 
+#title of asso directory (made by pipeline)
 asso_dir: asso
 
-pheno: pop.txt
+#directory of phenotype file
+pheno: sim_gwas/phe_n.phen
 
 #cluster:
 #    tmpdir: /tmp/
